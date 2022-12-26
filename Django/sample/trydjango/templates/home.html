@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+ 
+{% block content %}
+<h1>Hello world first page</h1>
+<h2>{{title}} with id {{id}}</h2>
+<p>{{content}}</p>
+
+<ul>
+{% for x in num_list %}
+    <li>{{ x }}</li>
+{% endfor %}
+</ul>
+
+<ul>
+    {% for x in article_list %}
+        {% if x.id %}
+        <li><a href="{{ x.get_absolute_url }}">{{ x.title }} (Id: {{x.id}})  ---->> {{x.content}}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+{% endblock %} 
