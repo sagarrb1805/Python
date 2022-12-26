@@ -1,0 +1,108 @@
+[
+{
+    "model": "recipes.recipe",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "name": "Recipe 1",
+        "description": "description of recipe 1",
+        "directions": "direction of recipe 1",
+        "timestamp": "2022-12-20T05:56:22.263Z",
+        "updated": "2022-12-22T10:07:19.101Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipe",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "name": "Recipe 2",
+        "description": "Recipe description",
+        "directions": "recipe directions",
+        "timestamp": "2022-12-22T09:30:16.955Z",
+        "updated": "2022-12-22T10:38:45.849Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 1,
+    "fields": {
+        "recipe": 1,
+        "name": "ingredient 1 for recipe 1",
+        "description": "",
+        "quantity": "2 1/2",
+        "quantity_as_float": 2.5,
+        "unit": "kilogram",
+        "directions": "",
+        "timestamp": "2022-12-20T06:18:45.289Z",
+        "updated": "2022-12-22T10:07:19.119Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 2,
+    "fields": {
+        "recipe": 1,
+        "name": "ingredient 2",
+        "description": "",
+        "quantity": "1 1/2",
+        "quantity_as_float": 1.5,
+        "unit": "gram",
+        "directions": "",
+        "timestamp": "2022-12-21T12:07:26.197Z",
+        "updated": "2022-12-22T10:07:19.130Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 10,
+    "fields": {
+        "recipe": 1,
+        "name": "ingredient 3",
+        "description": null,
+        "quantity": "1 1/2",
+        "quantity_as_float": 1.5,
+        "unit": "kg",
+        "directions": null,
+        "timestamp": "2022-12-22T08:41:44.634Z",
+        "updated": "2022-12-22T10:07:19.140Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 35,
+    "fields": {
+        "recipe": 3,
+        "name": "ingredient",
+        "description": null,
+        "quantity": "2 1/2",
+        "quantity_as_float": 2.5,
+        "unit": "pound",
+        "directions": null,
+        "timestamp": "2022-12-22T10:08:21.105Z",
+        "updated": "2022-12-22T10:38:45.861Z",
+        "active": true
+    }
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 36,
+    "fields": {
+        "recipe": 3,
+        "name": "ingredient 2",
+        "description": null,
+        "quantity": "1.2",
+        "quantity_as_float": 1.2,
+        "unit": "kilogram",
+        "directions": null,
+        "timestamp": "2022-12-22T10:08:21.115Z",
+        "updated": "2022-12-22T10:38:45.872Z",
+        "active": true
+    }
+}
+]
