@@ -5,11 +5,15 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from products.models import Product
+from products.serializers import ProductSerializer
 
-@api_view(['GET'])
+@api_view(['POST'])
 def api_home(request, *args, **kwargs):
-    model_data = Product.objects.all().order_by("?").first()
-    data = {}
-    if model_data:
-        data = model_to_dict(model_data, fields=['id', 'title'])
-    return Response(data)
+    data = None
+    serializer  = ProductSerializer(data=request.data)
+    if serializer.is_valid(raise_exception=True):
+        # instance = serializer.save()
+        # print(instance)
+        print(serializer.data)
+        return Response(serializer.data)
+    return Response({"invalid":"not good"}, status=400)
