@@ -3,7 +3,7 @@ import json
 
 # endpoint = "http://httpbin.org/status/200"
 # endpoint = "http://httpbin.org/anything"
-endpoint = 'http://localhost:8000/api/products/getlist'
+# endpoint = 'http://localhost:8000/api/products/getlist'
 endpoint = 'http://localhost:8000/api/products/'
 
 data = {
